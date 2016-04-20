@@ -1,0 +1,4 @@
+#!/bin/sh
+CURRDIR=`pwd`
+. $CURRDIR/bin/init
+python $CURRDIR/src/magic_square.py

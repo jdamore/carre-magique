@@ -1,0 +1,9 @@
+#!/bin/sh
+CURRDIR=`pwd`
+SRCDIR=$CURRDIR/src
+TSTDIR=$CURRDIR/test
+echo $CURRDIR
+echo $SRCDIR
+echo $TSTDIR
+export PYTHONPATH=$SRCDIR:$TSTDIR
+echo $PYTHONPATH

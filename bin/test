@@ -1,0 +1,4 @@
+#!/bin/sh
+CURRDIR=`pwd`
+. $CURRDIR/bin/init
+python $CURRDIR/test/all_test.py
