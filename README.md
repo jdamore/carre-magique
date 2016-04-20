@@ -1,7 +1,7 @@
 # carre-magique
 Solution to the TW magic square problem
 
-*Requirements*
+##Requirements
 
 With a positive integer x as input, build and print the magic square of order x (hence all the numbers from 1 to x^2 in a grid with equal
 
@@ -18,5 +18,32 @@ We will be looking for:
 - arbitrarily, we will support a response time of less than 10 seconds for a number up to 10M
 
 
-*To-Do*
+##Development
+
+###Prerequisites
+```
+	MacOsx
+	Git
+	Homebrew
+	An Internet Connection
+```
+
+###CLI
+
+Bootstrap command - will install Python3 and the required modules
+```
+	./bin/bootsrap
+```
+
+Run the tests
+```
+	./bin/test
+```
+
+Run the program
+```
+	./bin/start
+```
+
+##To-Do
 - write the program
