@@ -2,6 +2,7 @@
 Solution to the TW magic square problem
 
 *Requirements*
+
 With a positive integer x as input, build and print the magic square of order x (hence all the numbers from 1 to x^2 in a grid with equal
 
 We will be looking for:
