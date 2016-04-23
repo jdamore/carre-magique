@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# this is a test la la la
+
 CURRDIR=`pwd`
 SRCDIR=$CURRDIR/src
 TSTDIR=$CURRDIR/test
