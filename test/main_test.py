@@ -24,9 +24,9 @@ class MainTest(unittest.TestCase):
 		output = self.main.magic_square()
 		self.assertEqual(output.size, self.size*self.size)
 
-	def test_sum_of_first_row_should_equal_to_magic_sum(self):
-		magic_row = self.main.magic_row()
-		self.assertEqual(numpy.sum(magic_row), self.main.magic_sum())
+	def test_magic_subarray_should_equal_to_magic_sum(self):
+		magic_subarray = self.main.magic_subarray()
+		self.assertEqual(numpy.sum(magic_subarray), self.main.magic_sum())
 
 if __name__ == "__main__":
 	unittest.main()
