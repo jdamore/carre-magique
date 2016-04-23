@@ -14,9 +14,13 @@ class Main:
 		return self.matrix
 
 	def magic_row(self):
-		return self.matrix[0]
+		row = []
+		while numpy.sum(row)!=self.magic_sum():
+			row = numpy.random.choice(self.matrix.flatten(), self.x)
+		return row
 
 	def print_square(self):
+		print('\n')
 		print('\n'.join([''.join(['{:4}'.format(item) for item in row]) for row in self.matrix]))
 
 		# STEP1 - select a number (32 - 1 out of 10)
