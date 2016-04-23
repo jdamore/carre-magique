@@ -1,4 +1,5 @@
 #!/bin/sh
+
 CURRDIR=`pwd`
 SRCDIR=$CURRDIR/src
 TSTDIR=$CURRDIR/test
