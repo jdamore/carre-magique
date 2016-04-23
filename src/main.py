@@ -4,15 +4,21 @@ class Main:
 
 	def __init__(self, x):
 		self.x = x
-		self.matrix = numpy.ones((self.x, self.x))
+		self.matrix = numpy.fromfunction(lambda i, j: (j+i*self.x+1), (self.x, self.x), dtype=int)
 
 	def magic_sum(self):
 		return self.x*((self.x**2)+1)/2
 
 	def magic_square(self):
+		self.print_square()
 		return self.matrix
 
-	#def magic_row(self):
+	def magic_row(self):
+		return self.matrix[0]
+
+	def print_square(self):
+		print('\n'.join([''.join(['{:4}'.format(item) for item in row]) for row in self.matrix]))
+
 		# STEP1 - select a number (32 - 1 out of 10)
 		# STEP1 - make sure that the current total does not exceed 505
 		# STEP1 - if it does select another smaller number
