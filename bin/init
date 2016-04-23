@@ -1,4 +1,5 @@
 #!/bin/sh
+
 CURRDIR=`pwd`
 SRCDIR=$CURRDIR/src
 TSTDIR=$CURRDIR/test
@@ -7,4 +8,3 @@ echo $SRCDIR
 echo $TSTDIR
 export PYTHONPATH=$SRCDIR:$TSTDIR
 echo $PYTHONPATH
-pip install numpy
