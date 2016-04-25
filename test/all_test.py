@@ -1,8 +1,8 @@
 import unittest
 
-import main_test
+import magic_test
 
 suite = unittest.TestSuite()
-suite.addTests(main_test.suite())
+suite.addTests(magic_test.suite())
  
 unittest.TextTestRunner(verbosity=2).run(suite)

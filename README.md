@@ -22,15 +22,13 @@ We will be looking for:
 
 ###Prerequisites
 ```
-	MacOsx
 	Git
-	Homebrew
 	An Internet Connection
 ```
 
 ###CLI
 
-Bootstrap command - will install Python3 and the required modules
+Bootstrap command for MacOSX - will install Python3 and the required modules
 ```
 	./bin/bootsrap
 ```
@@ -42,8 +40,9 @@ Run the tests
 
 Run the program
 ```
-	./bin/start
+	./bin/run <dimension>
 ```
-
-##To-Do
-- write the program
+e.g.
+```
+	./bin/run 20
+```

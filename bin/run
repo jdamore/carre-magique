@@ -1,0 +1,3 @@
+#!/bin/sh
+CURRDIR=`pwd`
+python3 $CURRDIR/src/main.py $*
