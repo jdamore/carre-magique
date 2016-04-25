@@ -13,17 +13,11 @@ class Main:
 		self.print_square()
 		return self.matrix
 
-	def magic_subarray(self, array=None):
+	def magic_vector(self, array=None):
 		row = []
 		while numpy.sum(row)!=self.magic_sum():
 			row = numpy.random.choice(self.matrix.flatten() if array is None else array, self.x)
 		return row
-
-	# def magic_rows(self):
-	# 	rows = [][]
-	# 	values = self.matrix.flatten()
-	# 	while(true):
-
 
 	def print_square(self):
 		print('\n')
