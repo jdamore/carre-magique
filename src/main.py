@@ -2,12 +2,12 @@ import numpy
 
 class Main:
 
-	def __init__(self, x):
-		self.x = x
-		self.matrix = numpy.fromfunction(lambda i, j: (j+i*self.x+1), (self.x, self.x), dtype=int)
+	def __init__(self, dim):
+		self.dim = dim
+		self.matrix = numpy.fromfunction(lambda i, j: (j+i*self.dim+1), (self.dim, self.dim), dtype=int)
 
 	def magic_sum(self):
-		return self.x*((self.x**2)+1)/2
+		return self.dim*((self.dim**2)+1)/2
 
 	def magic_square(self):
 		self.print_square()
@@ -16,7 +16,7 @@ class Main:
 	def magic_vector(self, array=None):
 		row = []
 		while numpy.sum(row)!=self.magic_sum():
-			row = numpy.random.choice(self.matrix.flatten() if array is None else array, self.x)
+			row = numpy.random.choice(self.matrix.flatten() if array is None else array, self.dim)
 		return row
 
 	def print_square(self):
