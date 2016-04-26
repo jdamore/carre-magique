@@ -12,7 +12,7 @@ def suite():
 class MagicTest(unittest.TestCase):
 
 	def setUp(self):
-		self.dim = 10
+		self.dim = 7
 		self.magic = magic.Magic(self.dim)
 
 	def tearDown(self):
@@ -23,11 +23,8 @@ class MagicTest(unittest.TestCase):
 
 	def test_magic_square_should_return_a_matrix_of_the_correct_size(self):
 		output = self.magic.square()
+		print(self.magic.to_s())
 		self.assertEqual(output.size, self.dim*self.dim)
-
-	def test_magic_vector_should_equal_to_magic_sum(self):
-		magic_vector = self.magic.vector()
-		self.assertEqual(numpy.sum(magic_vector), self.magic.sum())
 
 if __name__ == "__main__":
 	unittest.main()
