@@ -15,6 +15,11 @@ class Magic:
 			self.msquare[i][i]=self.matrix[i][i]
 		for i in range(0,self.dim):
 			self.msquare[i][self.dim-(i+1)]=self.matrix[i][self.dim-(i+1)]
+		if self.dim % 2 == 1:
+			for i in range(0,self.dim):
+				self.msquare[int(self.dim/2)][i]=self.matrix[int(self.dim/2)][i]
+				self.msquare[i][int(self.dim/2)]=self.matrix[i][int(self.dim/2)]
+
 		return self.msquare
 
 	def to_s(self):
