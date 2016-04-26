@@ -11,10 +11,16 @@ class Magic:
 		return self.dim*((self.dim**2)+1)/2
 
 	def square(self):
+		for i in range(0,self.dim):
+			self.msquare[i][i]=self.matrix[i][i]
+		for i in range(0,self.dim):
+			self.msquare[i][self.dim-(i+1)]=self.matrix[i][self.dim-(i+1)]
 		return self.msquare
 
 	def to_s(self):
 		return '\n'+('\n'.join([''.join(['{:4}'.format(item) for item in row]) for row in self.msquare]))
+
+
 
 		# STEP1 - select a number (32 - 1 out of 10)
 		# STEP1 - make sure that the current total does not exceed 505
